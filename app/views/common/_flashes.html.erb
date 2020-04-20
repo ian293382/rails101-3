@@ -1,0 +1,7 @@
+<% if flash.any? %>
+  <% user_faction_flashes.each do |key, value| %>
+    <div class="alert alert-dimissable alert-<%= flash_class(key)%>">"
+      <button class="close" data-dimss="alert">x</button>
+    </div>
+  <% end %>
+<% end %>
