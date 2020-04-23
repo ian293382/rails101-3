@@ -9,7 +9,7 @@
   <h2><%= @group.title %></h2>
   <p><%= @group.description %></P>
 
-    <table class="table">
+  <table class="table">
     <thead>
       <tr>
         <th>文章內容</th>
@@ -25,5 +25,12 @@
           <td><%= post.created_at %></td>
         </tr>
       <% end %>
-    </table>
+    </tbody>
+  </table>
+
+  <div class="text-center">
+    <%= will_paginate @posts %>
+  </div>
+
+
 </div>
